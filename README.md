@@ -9,22 +9,8 @@ AI TelecomRadcomBot is a domain-specific AI assistant designed for telecom engin
 
 ## Features
 
-### Flow  Diagram
-                   ┌────────────┐
-                   │ User Query │
-                   └─────┬──────┘
-                         ▼
-              ┌────────────────────┐
-              │ isTelecom() check  │
-              └──────┬─────────────┘
-       ┌────────────┴────────────┐
-       ▼                         ▼
-Retrieve Context         GeneralResponse
-   ▼
-GradeDocuments
-   ▼
-generate()
-(LLM with context → Final Answer)
+
+<pre> ### Flow Diagram ``` ┌────────────┐ │ User Query │ └─────┬──────┘ ▼ ┌────────────────────┐ │ isTelecom() check │ └──────┬─────────────┘ ┌────────────┴────────────┐ ▼ ▼ Retrieve Context GeneralResponse ▼ GradeDocuments ▼ generate() (LLM with context → Final Answer) ``` </pre>
 
 
 ### Full-Stack Implementation
